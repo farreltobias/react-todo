@@ -1,0 +1,48 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.5rem;
+
+  background: none;
+  color: var(--gray-100);
+  font-weight: 700;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  transition: background 0.2s, color 0.2s;
+}
+
+.button:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.default {
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  background: var(--blue-dark);
+}
+
+.default:hover:not(:disabled) {
+  background: var(--blue);
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  padding: 0.2rem;
+  border-radius: 0.25rem;
+
+  color: var(--gray-300);
+}
+
+.icon:hover:not(:disabled) {
+  background: var(--gray-400);
+  color: var(--danger);
+}
