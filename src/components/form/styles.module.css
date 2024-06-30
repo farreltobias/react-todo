@@ -1,0 +1,8 @@
+.form {
+  display: flex;
+
+  /* 1.4 line-hight, 2 padding */
+  margin-top: calc(-1 * (1.4rem + 2rem) / 2);
+
+  gap: 0.5rem;
+}
